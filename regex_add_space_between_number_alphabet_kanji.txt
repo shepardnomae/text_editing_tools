@@ -1,0 +1,16 @@
+Regex to add a space between English word string and Kanji
+
+([\u4e00-\u9fa5]+)([A-Za-z]+)([\u4e00-\u9fa5]+)
+$1 $2 $3
+([\u4e00-\u9fa5]+)([A-Za-z]+)
+$1 $2
+([A-Za-z]+)([\u4e00-\u9fa5]+)
+$1 $2
+
+Regex to add a space between number string and Kanji
+([\u4e00-\u9fa5]+)([0-9]+)([\u4e00-\u9fa5]+)
+$1 $2 $3
+([0-9]+)([\u4e00-\u9fa5]+)
+$1 $2
+([\u4e00-\u9fa5]+)([0-9]+)
+$1 $2
